@@ -7,14 +7,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -30,18 +26,17 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item dropdown">
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="Egypt.html">Egypt</a>
-              <a class="dropdown-item" href="Lebanon.html">Lebanon</a>
-              <a class="dropdown-item" href="Turkey.html">Turkey</a>
+              <a class="dropdown-item" href="Egypt.php">Egypt</a>
+              <a class="dropdown-item active" href="Lebanon.php">Lebanon</a>
+              <a class="dropdown-item" href="Turkey.php">Turkey</a>
             </div>
-
           </li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 
         </ul>
       </div>
@@ -51,7 +46,7 @@
 
 
 
-  <div class="block-30 block-30-sm item" style="background-image: url('images/le_3.jpg');" data-stellar-background-ratio="0.5">
+  <div class="block-30 block-30-sm item" style="background-image: url('images/le_4.jpg');" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-10">
@@ -66,10 +61,10 @@
 
     <ul class="nav" id="pills-tab" role="tablist">
       <li class="nav-item" id="ttab">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="Turkey.html" role="tab" aria-controls="pills-home" aria-selected="true">Hotels</a>
+        <a class="nav-link active" id="pills-hotel-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-hotel" aria-selected="true" data-target="#pills-hotel">Hotels</a>
       </li>
       <li class="nav-item" id="ttab">
-        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-profile" aria-selected="false">Hotel Appartments</a>
+        <a class="nav-link" id="pills-hotel-appartments-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-hotel-appartments" aria-selected="false" data-target="#pills-hotel-appartments">Hotel Appartments</a>
       </li>
     </ul>
   </div>
@@ -78,6 +73,7 @@
   <div class=" site-section bg-light" id="blog">
 
     <div class="container">
+     <div class="tab-pane fade show active" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
       <div class="row">
 
         <div class="col-md-12 mb-4">
@@ -256,7 +252,96 @@
                 </div>
               </div>
   </div>
-  </div>
+
+
+  <div class="tab-pane fade" id="pills-hotel-appartments" role="tabpanel" aria-labelledby="pills-hotel-appartments-tab">
+    <div class="row">
+
+      <div class="col-md-12 mb-4">
+        <div class="block-3 d-md-flex">
+          <a class="image" href="blog-single.html" style="background-image: url('images/hilton_img1.jpg'); "></a>
+          <div class="text">
+            <h2 class="heading"><a href="#">The Hilton Hotel</a></h2>
+            <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Beirut</a> </p>
+            <p>Located in Sin El Fil, Beirut, featuring classical-style furnishings and a range of modern amenities, Hilton Beirut offers a range of facilities including an outdoor pool, sun terrace and gym with personal trainers and a tennis court</p>
+
+            <div class="media block-6">
+            <div class="icon"><span class="flaticon-double-bed"></span></div>
+            <div class="media-body">
+              <h3 class="heading">Luxury Rooms</h3>
+              </div>
+
+            <div class="icon"><span class="flaticon-wifi"></span></div>
+            <div class="media-body">
+              <h3 class="heading">Fast &amp; Free Wifi</h3>
+              </div>
+
+            <div class="icon"><span class="flaticon-taxi"></span></div>
+            <div class="media-body">
+              <h3 class="heading">Parking</h3>
+            </div>
+            </div>
+
+             <div class="media block-6">
+            <div class="icon"><span class="flaticon-dinner"></span></div>
+            <div class="media-body">
+              <h3 class="heading">Restaurant</h3>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 mb-4">
+        <div class="block-3 d-md-flex">
+          <a class="image" href="blog-single.html" style="background-image: url('images/Boutique_img1.jpg'); "></a>
+          <div class="text">
+            <h2 class="heading"><a href="#">The Rooms Boutique Hotel</a></h2>
+            <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Jounieh</a> </p>
+            <p>Located in Jounieh, The Rooms Boutique Hotel is just a short walk from the beach and 500 meters from Fuad Chehab Stadium in Jounieh. It has an outdoor pool, and guests can enjoy views of the sea and the restaurant</p>
+
+                    <div class="media block-6">
+                    <div class="icon"><span class="flaticon-double-bed"></span></div>
+                    <div class="media-body">
+                      <h3 class="heading">Luxury Rooms</h3>
+                      </div>
+
+                    <div class="icon"><span class="flaticon-taxi"></span></div>
+                    <div class="media-body">
+                      <h3 class="heading">Parking</h3>
+                    </div>
+
+                    <div class="icon"><span class="flaticon-dinner"></span></div>
+                    <div class="media-body">
+                      <h3 class="heading">Restaurant</h3>
+                      </div>
+                      </div>
+
+              </div>
+              </div>
+            </div>
+
+
+   </div>
+
+         <div class="row mt-5">
+                   <div class="col-md-12 pt-5">
+                     <ul class="pagination custom-pagination">
+                       <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
+                       <li class="page-item active"><a class="page-linkx" href="#">1</a></li>
+                       <li class="page-item"><a class="page-link" href="#">2</a></li>
+                       <li class="page-item"><a class="page-link" href="#">3</a></li>
+                       <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
+                     </ul>
+
+
+                   </div>
+                 </div>
+               </div>
+
+</div>
+</div>
+
 
   <footer class="footer">
     <div class="container">
@@ -273,7 +358,7 @@
               <img src="images/img_1.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="Turkey.html">Turkey</a></h3>
+              <h3 class="heading"><a href="Turkey.php">Turkey</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -287,7 +372,7 @@
               <img src="images/img_2.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="Lebanon.html">Lebanon</a></h3>
+              <h3 class="heading"><a href="Lebanon.php">Lebanon</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -301,7 +386,7 @@
               <img src="images/img_3.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="egypt.html">Egypt</a></h3>
+              <h3 class="heading"><a href="egypt.php">Egypt</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -328,8 +413,8 @@
         <div class="col-md-12 text-left">
           <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made by Malak & Shima
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
       </div>

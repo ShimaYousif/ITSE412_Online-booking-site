@@ -2636,7 +2636,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #fc3c3c; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -7620,8 +7620,8 @@ textarea.form-control {
   background: #fc3c3c !important; }
 
 .site-section {
-  padding: 7em 0; }
-
+  padding: 7em 0;
+}
 .ftco-bg-dark {
   background: #3c312e; }
 
@@ -8839,6 +8839,12 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+
+
+  .centerdiv{
+max-height: 1700px;
+  }
+
 
 @-webkit-keyframes loader-rotate {
   100% {

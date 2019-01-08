@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
+     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -30,23 +29,50 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="egypt.html">Egypt</a>
-              <a class="dropdown-item" href="Lebanon.html">Lebanon</a>
-              <a class="dropdown-item" href="Turkey.html">Turkey</a>
+              <a class="dropdown-item" href="Turkey.php">Turkey</a>
+              <a class="dropdown-item" href="Lebanon.php">Lebanon</a>
+              <a class="dropdown-item" href="egypt.php">Egypt</a>
             </div>
 
           </li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        <li class "nav-item"><button type="submit" class="btn btn-primary submit">Login</button> </li>
+          <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <li class "nav-item"><a class="nav-link" data-toggle="modal" data-target="#LoginModal" style="padding-top: 30px;"><button type="submit" class="btn btn-primary ">Login</button></a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!---قامت به ملاك ---------->
+<div id="LoginModal" class="modal fade" role="dialog">
+ <div class="modal-dialog">
+   <div class="modal-content">
+
+     <div class="modal-header">
+       <h4 class="modal-title">Login </h4>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+     </div>
+
+     <div class="modal-body">
+       <lable>UserName</label>
+       <input type="text" name="username" id="username" class="form-control" />
+       <br />
+       <lable>Password</label>
+       <input type="password" name="password" id="password" class="form-control"/>
+     </div>
+
+     <div class="modal-footer">
+       <button type="submit" name="login_button" id="login_button" class=" btn btn-primary submit">Login</button>
+     </div>
+
+   </div>
+ </div>
+</div>
+
   <!-- END nav -->
 
   <div class="block-31" style="position: relative;">
@@ -57,7 +83,7 @@
             <div class="col-md-10">
               <span class="subheading-sm">Welcome To</span>
               <h2 class="heading">Turkey</h2>
-              <p><a href="Turkey.html" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+              <p><a href="Turkey.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -68,7 +94,7 @@
             <div class="col-md-10">
               <span class="subheading-sm">Welcome To</span>
               <h2 class="heading">Lebanon</h2>
-              <p><a href="Lebanon.html" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+              <p><a href="Lebanon.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -79,7 +105,7 @@
             <div class="col-md-10">
               <span class="subheading-sm">Welcome To</span>
               <h2 class="heading">Egypt</h2>
-              <p><a href="egypt.html" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+              <p><a href="egypt.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -310,130 +336,208 @@
             </div>
           </div>
 
-        <div class="block-35">
+          <div class="block-35">
 
-          <ul class="nav" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="Turkey.html" role="tab" aria-controls="pills-home" aria-selected="true">Turkey</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-profile" aria-selected="false">Lebanon</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="egypt.html" role="tab" aria-controls="pills-contact" aria-selected="false">Egypt</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-              <div class="row">
-                <div class="col-md-12 block-13">
-                  <div class="nonloop-block-13 owl-carousel">
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+            <ul class="nav" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-Turkey-tab" data-toggle="pill" href="Turkey.html" role="tab" aria-controls="pills-Turkey" aria-selected="false" data-target="#pills-Turkey">Turkey</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-Lebanon-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-Lebanon" aria-selected="false" data-target="#pills-Lebanon">Lebanon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-egypt-tab" data-toggle="pill" href="egypt.html" role="tab" aria-controls="pills-egypt" aria-selected="false" data-target="#pills-egypt">Egypt</a>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-Turkey" role="tabpanel" aria-labelledby="pills-Turkey-tab">
+                <div class="row">
+                  <div class="col-md-12 block-13">
+                    <div class="nonloop-block-13 owl-carousel">
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Asparagus</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">31.45</span></div>
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">31.45</span></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">32.45</span></div>
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">32.45</span></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Spicy Noodles</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                          </div>
                         </div>
                       </div>
+
                     </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">34.50</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">35.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">36.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">37.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-
                   </div>
+                </div>
+              </div>
+
+
+              <div class="tab-pane fade" id="pills-Lebanon" role="tabpanel" aria-labelledby="pills-Lebanon-tab">
+                <div class="row">
+                  <div class="col-md-12 block-13">
+                    <div class="nonloop-block-13 owl-carousel">
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">23.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Asparagus</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">45.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Spicy Noodles</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-egypt" role="tabpanel" aria-labelledby="pills-egypt-tab">
+                <div class="row">
+                  <div class="col-md-12 block-13">
+                    <div class="nonloop-block-13 owl-carousel">
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">45.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Egg &amp; Asparagus</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">23.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="block-34">
+                          <div class="image">
+                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                          </div>
+                          <div class="text">
+                            <h2 class="heading">Spicy Noodles</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
+                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
                 </div>
               </div>
             </div>
@@ -764,7 +868,7 @@
               <img src="images/img_1.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="Turkey.html">Turkey</a></h3>
+              <h3 class="heading"><a href="Turkey.php">Turkey</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -778,7 +882,7 @@
               <img src="images/img_2.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="Lebanon.html">Lebanon</a></h3>
+              <h3 class="heading"><a href="Lebanon.php">Lebanon</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -792,7 +896,7 @@
               <img src="images/img_3.jpg" alt="" class="img-fluid">
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="egypt.html">Egypt</a></h3>
+              <h3 class="heading"><a href="egypt.php">Egypt</a></h3>
               <div class="meta">
                 <div><a href="#"><span class="icon-calendar"></span> Dec 29, 2018</a></div>
                 <div><a href="#"><span class="icon-person"></span> Admin</a></div>
@@ -831,10 +935,10 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script><!--yes-->
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script><!--yes-->
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>

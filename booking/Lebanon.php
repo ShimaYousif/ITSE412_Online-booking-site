@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bright Hotel - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Online Booking</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -55,18 +55,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="block-35">
-
-    <ul class="nav" id="pills-tab" role="tablist">
-      <li class="nav-item" id="ttab">
-        <a class="nav-link active" id="pills-hotel-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-hotel" aria-selected="true" data-target="#pills-hotel">Hotels</a>
-      </li>
-      <li class="nav-item" id="ttab">
-        <a class="nav-link" id="pills-hotel-appartments-tab" data-toggle="pill" href="Lebanon.html" role="tab" aria-controls="pills-hotel-appartments" aria-selected="false" data-target="#pills-hotel-appartments">Hotel Appartments</a>
-      </li>
-    </ul>
   </div>
 
 
@@ -233,114 +221,17 @@
           </div>
         </div>
 
+      
+    </div>
+
 
 
 
       </div>
-
-      <div class="row mt-5">
-                <div class="col-md-12 pt-5">
-                  <ul class="pagination custom-pagination">
-                    <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
-                    <li class="page-item active"><a class="page-linkx" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
-                  </ul>
-
-
-                </div>
-              </div>
-  </div>
-
-
-  <div class="tab-pane fade" id="pills-hotel-appartments" role="tabpanel" aria-labelledby="pills-hotel-appartments-tab">
-    <div class="row">
-
-      <div class="col-md-12 mb-4">
-        <div class="block-3 d-md-flex">
-          <a class="image" href="blog-single.html" style="background-image: url('images/hilton_img1.jpg'); "></a>
-          <div class="text">
-            <h2 class="heading"><a href="#">The Hilton Hotel</a></h2>
-            <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Beirut</a> </p>
-            <p>Located in Sin El Fil, Beirut, featuring classical-style furnishings and a range of modern amenities, Hilton Beirut offers a range of facilities including an outdoor pool, sun terrace and gym with personal trainers and a tennis court</p>
-
-            <div class="media block-6">
-            <div class="icon"><span class="flaticon-double-bed"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Luxury Rooms</h3>
-              </div>
-
-            <div class="icon"><span class="flaticon-wifi"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Fast &amp; Free Wifi</h3>
-              </div>
-
-            <div class="icon"><span class="flaticon-taxi"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Parking</h3>
-            </div>
-            </div>
-
-             <div class="media block-6">
-            <div class="icon"><span class="flaticon-dinner"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Restaurant</h3>
-              </div>
-              </div>
-          </div>
-        </div>
+      </div>
       </div>
 
-      <div class="col-md-12 mb-4">
-        <div class="block-3 d-md-flex">
-          <a class="image" href="blog-single.html" style="background-image: url('images/Boutique_img1.jpg'); "></a>
-          <div class="text">
-            <h2 class="heading"><a href="#">The Rooms Boutique Hotel</a></h2>
-            <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Jounieh</a> </p>
-            <p>Located in Jounieh, The Rooms Boutique Hotel is just a short walk from the beach and 500 meters from Fuad Chehab Stadium in Jounieh. It has an outdoor pool, and guests can enjoy views of the sea and the restaurant</p>
 
-                    <div class="media block-6">
-                    <div class="icon"><span class="flaticon-double-bed"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading">Luxury Rooms</h3>
-                      </div>
-
-                    <div class="icon"><span class="flaticon-taxi"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading">Parking</h3>
-                    </div>
-
-                    <div class="icon"><span class="flaticon-dinner"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading">Restaurant</h3>
-                      </div>
-                      </div>
-
-              </div>
-              </div>
-            </div>
-
-
-   </div>
-
-         <div class="row mt-5">
-                   <div class="col-md-12 pt-5">
-                     <ul class="pagination custom-pagination">
-                       <li class="page-item prev"><a class="page-link" href="#"><i class="icon-keyboard_arrow_left"></i></a></li>
-                       <li class="page-item active"><a class="page-linkx" href="#">1</a></li>
-                       <li class="page-item"><a class="page-link" href="#">2</a></li>
-                       <li class="page-item"><a class="page-link" href="#">3</a></li>
-                       <li class="page-item next"><a class="page-link" href="#"><i class="icon-keyboard_arrow_right"></i></a></li>
-                     </ul>
-
-
-                   </div>
-                 </div>
-               </div>
-
-</div>
-</div>
 
 
   <footer class="footer">
@@ -348,7 +239,7 @@
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.</p>
+          <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
           <p><a href="#" class="btn btn-primary px-4">Button</a></p>
         </div>
         <div class="col-md-6 col-lg-4">

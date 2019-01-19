@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bright Hotel - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Online Booking</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -47,121 +47,45 @@
 
 
 
-  <div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10">
-          <span class="subheading-sm">About</span>
-          <h2 class="heading">This Site</h2>
+  <div class="block-31 " style="position: relative;">
+        <div class="owl-carousel loop-block-31">
+          <div class="block-30 " style="background-image: url('images/TR_2.jpg');">
+          </div>
+          <div class="block-30" style="background-image: url('images/LE_1.jpg');">
+          </div>
+          <div class="block-30" style="background-image: url('images/EG_1.jpg');">
+          </div>
+
         </div>
       </div>
-    </div>
-  </div>
 
 
 
+  <div class="site-section">
+    <div class="container">
 
-    <div class="site-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12">
-            <img src="images/EG_1.jpg" alt="Image placeholder" class="img-fluid">
-          </div>
-        </div>
+
         <div class="row">
           <div class="col-md-12 mb-3">
-            <h2>Enjoy a Luxury Experience</h2>
+            <h2>Learn About US</h2>
           </div>
           <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, necessitatibus officiis facere nisi et, ut adipisci a quis quisquam vitae doloremque tempora repellat quae accusantium atque eum voluptatibus aperiam cumque.</p>
-            <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
-            <p>Pariatur non consectetur libero, veniam inventore officia neque ipsum vel vitae repudiandae doloribus odit nihil dicta sit, magnam eos, in asperiores consequuntur eaque atque nam error. Dignissimos porro veniam voluptate.</p>
+            <p>This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
+            <p>The hotels offered by different levels in terms of cost, the most expensive and the average and the cheap ones, as well as the services provided by each hotel there are hotels that provide breakfast in the cost of room reservations in the hotel, and there are hotels that offer free Wi-Fi, It gives you the opportunity to rent a means of transportation.</p>
+
           </div>
           <div class="col-md-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, necessitatibus officiis facere nisi et, ut adipisci a quis quisquam vitae doloremque tempora repellat quae accusantium atque eum voluptatibus aperiam cumque.</p>
-            <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
+            <p>These hotels are also different in design. They are classically styled, with modern design, as well as the possibility of booking in a private suite with some other privileges such as sea or mountain views, or providing a swimming pool or massage and special care.</p>
+            <p>This site allows the user to book in a hotel he wishes. The reservation is by e-mail. There is no payment fee at the time of booking. The user is not required to enter his credit card. Payment is made upon arrival at the hotel.</p>
           </div>
 
         </div>
       </div>
     </div>
 
-    <div class="site-section">
-      <div class="container">
-        <div class="row mb-5 text-center">
-          <div class="col-md-12 mb-5">
-            <h2>The Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="block-38 text-center">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_1.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Elizabeth Graham</h3>
-                  <p class="block-38-subheading">CEO</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="block-38 text-center">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_2.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Jennifer Greive</h3>
-                  <p class="block-38-subheading">President</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="block-38 text-center">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_3.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Patrick Marx</h3>
-                  <p class="block-38-subheading">Marketer</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="block-38 text-center">
-              <div class="block-38-img">
-                <div class="block-38-header">
-                  <img src="images/person_2.jpg" alt="Image placeholder">
-                  <h3 class="block-38-heading">Mike Coolbert</h3>
-                  <p class="block-38-subheading">Partner</p>
-                </div>
-                <div class="block-38-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut minima nihil sit distinctio recusandae doloribus ut fugit officia voluptate soluta. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
-    <div class="block-31 mb-5" style="position: relative;">
-          <div class="owl-carousel loop-block-31">
-            <div class="block-30 no-overlay item" style="background-image: url('images/TR_2.jpg');"></div>
-            <div class="block-30 no-overlay item" style="background-image: url('images/LE_1.jpg');"></div>
-            <div class="block-30 no-overlay item" style="background-image: url('images/EG_1.jpg');"></div>
-          </div>
-        </div>
+
 
     <div class="site-section">
       <div class="container">
@@ -176,15 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="media block-6">
-            <div class="icon"><span class="flaticon-wifi"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Fast &amp; Free Wifi</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>
-        </div>
+
         <div class="col-md-6 col-lg-4">
           <div class="media block-6">
             <div class="icon"><span class="flaticon-customer-service"></span></div>
@@ -197,15 +113,6 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="media block-6">
-            <div class="icon"><span class="flaticon-taxi"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Travel Accomodation</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="media block-6">
             <div class="icon"><span class="flaticon-credit-card"></span></div>
             <div class="media-body">
               <h3 class="heading">Accepts Credit Card</h3>
@@ -213,15 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="media block-6">
-            <div class="icon"><span class="flaticon-dinner"></span></div>
-            <div class="media-body">
-              <h3 class="heading">Restaurant</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-            </div>
-          </div>
-        </div>
+
 
       </div>
       </div>
@@ -303,7 +202,7 @@
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
-          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt.</p>
+          <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
           <p><a href="#" class="btn btn-primary px-4">Button</a></p>
         </div>
         <div class="col-md-6 col-lg-4">

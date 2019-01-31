@@ -30,8 +30,8 @@
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="Egypt.php">Egypt</a>
-              <a class="dropdown-item active" href="Lebanon.php">Lebanon</a>
+              <a class="dropdown-item active" href="Egypt.php">Egypt</a>
+              <a class="dropdown-item" href="Lebanon.php">Lebanon</a>
               <a class="dropdown-item" href="Turkey.php">Turkey</a>
             </div>
           </li>
@@ -51,7 +51,7 @@
       <div class="row align-items-center">
         <div class="col-md-10">
           <span class="subheading-sm">Countries</span>
-              <h2 class="heading"> Lebanon </h2>
+              <h2 class="heading"> Egypt </h2>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
           <div class="block-3 d-md-flex">
             <a class="image" href="blog-single.html" style="background-image: url('images/st_img1.jpg'); "></a>
             <div class="text">
-              <h2 class="heading"><a href="#">The Steigenberger Liberation Hotel</a></h2>
+              <h2 class="heading"><a href="Steigenberger Hotel.php">The Steigenberger Liberation Hotel</a></h2>
               <p class="meta"><em></em> <a href="">Egypt</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Cairo</a> </p>
               <p>Located in Cairo, 200 meters from the Egyptian Museum, the Steigenberger Hotel is an outdoor pool and sauna. Guests can enjoy the on-site restaurant, free Wi-Fi is available throughout the residence and private parking is available on site. Rooms have a flat-screen TV, and the extras include free toiletries and a hairdryer.</p>
 

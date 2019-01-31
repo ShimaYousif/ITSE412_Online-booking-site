@@ -358,12 +358,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                            <a href="Renata Hotel.php"><img src="images/renata4_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Asparagus</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                            <h2 class="heading">Deluxe Room with Terrace</h2>
+                            <div class="price"><sup>$</sup><span class="number">250</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 3</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -371,12 +377,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                            <a href="Renata Hotel.php"><img src="images/img_2.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">31.45</span></div>
+                            <h2 class="heading">Single Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">145</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 1</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> One bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -384,12 +396,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                            <a href="Renata Hotel.php"><img src="images/renata5_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">32.45</span></div>
+                            <h2 class="heading">Family Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">375</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 Double bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -397,12 +415,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/TR_3.jpg" alt="Image placeholder"></a>
+                            <a href="Renata Hotel.php"><img src="images/renata3_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Spicy Noodles</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                            <h2 class="heading">Comfort Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 3</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 2 single beds and  1 sofa bed or 1 double bed and  1 sofa bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -420,12 +444,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="images/hi3.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">23.45</span></div>
+                            <h2 class="heading">Deluxe Club Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">345</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 double bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -433,12 +463,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="images/hi2_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Asparagus</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                            <h2 class="heading"> Superior Double Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 3</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -446,12 +482,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="images/hi1_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">45.45</span></div>
+                            <h2 class="heading">Deluxe Twin Room </h2>
+                            <div class="price"><sup>$</sup><span class="number">280</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 2 single beds </li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -459,12 +501,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/LE_0.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="images/hi4_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Spicy Noodles</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                            <h2 class="heading">Deluxe Room </h2>
+                            <div class="price"><sup>$</sup><span class="number">190</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
                           </div>
                         </div>
                       </div>

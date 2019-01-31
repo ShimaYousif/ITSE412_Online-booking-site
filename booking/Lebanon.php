@@ -46,7 +46,7 @@
 
 
 
-  <div class="block-30 block-30-sm item" style="background-image: url('images/le_4.jpg');" data-stellar-background-ratio="0.5">
+  <div class="block-30 block-30-sm item" style="background-image: url('images/LE_1.jpg');" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-10">
@@ -68,7 +68,7 @@
           <div class="block-3 d-md-flex">
             <a class="image" href="blog-single.html" style="background-image: url('images/hilton_img1.jpg'); "></a>
             <div class="text">
-              <h2 class="heading"><a href="#">The Hilton Hotel</a></h2>
+              <h2 class="heading"><a href="Hilton Hotel.php">The Hilton Hotel</a></h2>
               <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Beirut</a> </p>
               <p>Located in Sin El Fil, Beirut, featuring classical-style furnishings and a range of modern amenities, Hilton Beirut offers a range of facilities including an outdoor pool, sun terrace and gym with personal trainers and a tennis court</p>
 
@@ -221,7 +221,7 @@
           </div>
         </div>
 
-      
+
     </div>
 
 

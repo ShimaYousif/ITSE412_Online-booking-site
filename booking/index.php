@@ -1,3 +1,6 @@
+<?php
+ include('connection.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,6 +52,7 @@
 
   <!---قامت به ملاك ---------->
 <div id="LoginModal" class="modal fade" role="dialog">
+  <form action="server.php" method="post">
  <div class="modal-dialog">
    <div class="modal-content">
 
@@ -71,9 +75,50 @@
 
    </div>
  </div>
+</form>
 </div>
 
   <!-- END nav -->
+
+  <?php if(isset($_SESSION['success'])):?>
+                                         <?php
+                                          echo $_SESSION['success'];
+                                          unset($_SESSION['success']);?>
+                                       <?php endif ?>
+
+
+    <script>
+    $(document).ready(function(){
+      $('#login_button').click(function(){
+        var username = $('#username').val();
+        var password = $('#password').val();
+        if(username != '' && password != '')
+        {
+            $.ajax ({
+              url:"serve.php",
+              method:"post",
+              data:{username:username, password:password},
+              success:function(data){
+                if(dats == 'No')
+                {
+                  alert("Wrong Data");
+                }
+                else
+                {
+                  $('#LoginModal').hide();
+                  location.reload();
+                  }
+                }
+              }
+            )};
+        else
+         {
+            alert("Both fields are required");
+        }
+      });
+    });
+    </script>
+    <!--نهاية الاتصال php-->
 
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
@@ -1002,3 +1047,6 @@
 
   </body>
 </html>
+<?php
+include('colseConnaction.php');
+ ?>

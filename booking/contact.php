@@ -1,3 +1,6 @@
+<?php
+ include('connection.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,39 +58,50 @@
   </div>
 
 
-
-
   <div class="site-section centerdiv">
     <div class="container">
       <div class="row block-9">
         <div class="col-md-6 pr-md-5" style="left: 250px;">
-          <form action="#">
+          <form  method="post">
             <div class="form-group">
-              <input type="text" class="form-control px-3 py-3" placeholder="Your Name">
+              <input type="text" name="nam" class="form-control px-3 py-3" placeholder="Your Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control px-3 py-3" placeholder="Your Email">
+              <input type="text" name="em" class="form-control px-3 py-3" placeholder="Your Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control px-3 py-3" placeholder="Subject">
+              <input type="text" name="sub" class="form-control px-3 py-3" placeholder="Subject">
             </div>
             <div class="form-group">
-              <textarea name="" id="" cols="30" rows="7" class="form-control px-3 py-3" placeholder="Message"></textarea>
+              <textarea name="mess" id="mas" cols="30" rows="7" class="form-control px-3 py-3" placeholder="Message"></textarea>
             </div>
             <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              <button type="submit" name="submit" id="submit"  class="btn btn-primary py-3 px-5">Send Message
+            </button>
             </div>
           </form>
 
         </div>
-
-    <!-- <div class="col-md-6" id="map"></div>
-  </div> -->
-
-    </div>
   </div>
 
+  <?php
+  if (isset($_POST['submit'])) {
+    if($con)
+      echo "Connect to databass ";
+?>
+<br />
+<br />
+<?php
+    $sql = "insert into  reviews (name,email,subject,message)
 
+     VALUES ('".$_POST['nam']."','".$_POST['em']."','".$_POST['sub']."','".$_POST['mess']."')";
+
+//$result = $connect->query($query);
+    $query= mysqli_query($con, $sql);
+}
+     ?>
+   </div>
+  </div>
 
   <div class="site-section bg-light">
       <div class="container">
@@ -257,3 +271,6 @@
 
   </body>
 </html>
+<?php
+include('colseConnaction.php');
+ ?>

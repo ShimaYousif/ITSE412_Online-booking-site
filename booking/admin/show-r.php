@@ -121,8 +121,7 @@
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                          <th>ID_Hotel</th>
-                                          <th>Name</th>
+                                          <th>Name Hotel</th>
                                           <th>Email</th>
                                           <th>Phone</th>
                                           <th>City</th>
@@ -143,9 +142,7 @@
                                      while ($row = mysqli_fetch_array($records))
                                       {
                                        echo "<tr><td>";
-                                       echo $row['id'];
-                                       echo "</td><td>";
-                                       echo $row['name'];
+                                       echo $row['name_hotel'];
                                         echo "</td><td>";
                                        echo $row['email'];
                                          echo "</td><td>";

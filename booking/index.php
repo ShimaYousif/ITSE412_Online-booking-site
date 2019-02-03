@@ -25,7 +25,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Booking</a>
+      <a class="navbar-brand" href="index.php">Booking</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -36,9 +36,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="Turkey.php">Turkey</a>
+              <a class="dropdown-item" href="Egypt.php">Egypt</a>
               <a class="dropdown-item" href="Lebanon.php">Lebanon</a>
-              <a class="dropdown-item" href="egypt.php">Egypt</a>
+              <a class="dropdown-item" href="Turkey.php">Turkey</a>
             </div>
 
           </li>
@@ -414,7 +414,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -433,7 +433,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> One bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -452,7 +452,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 1 Double bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -464,14 +464,14 @@
                           </div>
                           <div class="text">
                             <h2 class="heading">Comfort Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
+                            <div class="price"><sup>$</sup><span class="number">200</span><sub>/per night</sub></div>
                             <ul class="specs">
                               <li><strong>Adults:</strong> 3</li>
                               <li><strong>Categories:</strong> Single</li>
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 2 single beds and  1 sofa bed or 1 double bed and  1 sofa bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -489,7 +489,7 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="Hilton Hotel.php"><img src="images/hi3.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="images/hi3_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
                             <h2 class="heading">Deluxe Club Room</h2>
@@ -500,7 +500,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 1 double bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -519,7 +519,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -538,7 +538,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 2 single beds </li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -557,7 +557,7 @@
                               <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                               <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -575,12 +575,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                            <a href="Steigenberger Hotel.php"><img src="images/st4_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">45.45</span></div>
+                            <h2 class="heading">Deluxe Room </h2>
+                            <div class="price"><sup>$</sup><span class="number">290</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -588,12 +594,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                            <a href="Steigenberger Hotel.php"><img src="images/st2_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Egg &amp; Asparagus</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">30.50</span></div>
+                            <h2 class="heading"> Superior City View Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 3</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -601,12 +613,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                            <a href="Steigenberger Hotel.php"><img src="images/st5_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">23.45</span></div>
+                            <h2 class="heading"> Twin Guest Room</h2>
+                            <div class="price"><sup>$</sup><span class="number">170</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong>2 Single bed</li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -614,12 +632,18 @@
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                            <a href="Steigenberger Hotel.php"><img src="images/st1_img.jpg" alt="Image placeholder"></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Spicy Noodles</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                            <div class="price"><sup>$</sup><span class="number">33.45</span></div>
+                            <h2 class="heading">Junior Suite </h2>
+                            <div class="price"><sup>$</sup><span class="number">320</span><sub>/per night</sub></div>
+                            <ul class="specs">
+                              <li><strong>Adults:</strong> 2</li>
+                              <li><strong>Categories:</strong> Single</li>
+                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
+                              <li><strong>Bed Type:</strong> 2 single beds </li>
+                            </ul>
+                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
                           </div>
                         </div>
                       </div>
@@ -952,7 +976,7 @@
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
-          <p><a href="#" class="btn btn-primary px-4">Button</a></p>
+          <p><a href="about.php" class="btn btn-primary px-4">Button</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Countries</h3>

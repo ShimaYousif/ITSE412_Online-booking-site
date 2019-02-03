@@ -30,7 +30,7 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="#"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -68,7 +68,7 @@
 
           <div class="col-md-12 mb-4">
             <div class="block-3 d-md-flex">
-              <a class="image" href="blog-single.html" style="background-image: url('images/t1_img.jpg'); "></a>
+              <a class="image" href="Renata Hotel.php" style="background-image: url('images/t1_img.jpg'); "></a>
               <div class="text">
                 <h2 class="heading"><a href="Renata Hotel.php">The Renata Hotel </a></h2>
                 <p class="meta"><em></em> <a href="">Turkey</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Istanbul</a> </p>
@@ -242,7 +242,7 @@
           <div class="col-md-6 col-lg-4">
             <h3 class="heading-section">About Us</h3>
             <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
-            <p><a href="#" class="btn btn-primary px-4">Button</a></p>
+            <p><a href="about.php" class="btn btn-primary px-4">Button</a></p>
           </div>
           <div class="col-md-6 col-lg-4">
             <h3 class="heading-section">Countries</h3>

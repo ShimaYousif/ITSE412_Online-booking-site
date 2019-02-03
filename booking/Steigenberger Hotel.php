@@ -19,7 +19,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Booking</a>
+      <a class="navbar-brand" href="index.php">Booking</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -77,7 +77,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 double bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 2 single beds </li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong>2 Single bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 Double bed and 1 single bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 Double bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@
                   <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
                   <li><strong>Bed Type:</strong> 1 Double bed</li>
                 </ul>
-                <p><a href="#" class="btn btn-primary py-3 px-5">Booke Now</a></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@
           <div class="col-md-6 col-lg-4">
             <h3 class="heading-section">About Us</h3>
             <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
-            <p><a href="#" class="btn btn-primary px-4">Button</a></p>
+            <p><a href="about.php" class="btn btn-primary px-4">Button</a></p>
           </div>
           <div class="col-md-6 col-lg-4">
             <h3 class="heading-section">Countries</h3>

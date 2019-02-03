@@ -19,7 +19,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Booking</a>
+      <a class="navbar-brand" href="index.php">Booking</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -66,7 +66,7 @@
 
         <div class="col-md-12 mb-4">
           <div class="block-3 d-md-flex">
-            <a class="image" href="blog-single.html" style="background-image: url('images/hilton_img1.jpg'); "></a>
+            <a class="image" href="Hilton Hotel.php" style="background-image: url('images/hilton_img1.jpg'); "></a>
             <div class="text">
               <h2 class="heading"><a href="Hilton Hotel.php">The Hilton Hotel</a></h2>
               <p class="meta"><em></em> <a href="">Lebanon</a> <span class="sep">&bullet;</span> <em></em> <a href="#">Beirut</a> </p>
@@ -240,7 +240,7 @@
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">About Us</h3>
           <p class="mb-5">This site offers many different hotels in more than one city around the world. The hotel offers an overview of the hotel and the services it provides, as well as its location and beyond the vital and tourist places in the city.</p>
-          <p><a href="#" class="btn btn-primary px-4">Button</a></p>
+          <p><a href="about.php" class="btn btn-primary px-4">Button</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Countries</h3>

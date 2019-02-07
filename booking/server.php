@@ -6,23 +6,23 @@ include('connection.php');
 session_start();
 
 
-if(isset($_POST["username"]))
+if(isset($_POST["adminname"]))
 {
 		$sql = "
-		select user_name,password from users
-		where user_name = '".$_POST['username']."'
+		select admin_name,password from admin
+		where admin_name = '".$_POST['adminname']."'
 		AND password = '".$_POST["password"]."'
 		";
 		$query = mysqli_query($con, $sql);
 		if(mysqli_num_rows($query) > 0)
 		{
-			$_SESSION["username"] = $_POST["username"];
+			$_SESSION["adminname"] = $_POST["adminname"];
 		//	echo "yes";
  header('location: admin/index.php');
 	}
 		else
 		{
-			echo "No";
+			echo "name or passwerd Error";
 		}
 }
  ?>

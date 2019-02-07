@@ -68,7 +68,7 @@
                             <li><i class="menu-icon fa fa-table"></i><a href="show-user.php">Show User</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reviews.php">Show Reviews</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reservations.php"> Show Reservations</a></li>
-                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show ارشيف</a></li>
+                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show Archives</a></li>
 
                         </ul>
                     </li>
@@ -84,14 +84,20 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
                   <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                 </div>
-            </div>
 
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
+                </div>
+            </div>
         </header><!-- /header -->
         <!-- Header-->
 
@@ -122,10 +128,10 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">Add Form</strong>
+                                <strong class="card-title">Form Add Hotel</strong>
                             </div>
                             <div class="card-body">
-                              <div >
+                              <div>
                               <form  method="post">
                                 <div class="form-group">
                                   <lable>ID Hotel</label>
@@ -161,21 +167,18 @@
 
                            <?php
                            if (isset($_POST['submit'])) {
-                             if($con)
-                               echo "Connect to databass ";
-                         ?>
-                         <br />
-                         <br />
-                         <?php
+
                              $sql = "insert into  hotel (id,name,email,telephone,city,country)
 
                               VALUES ('".$_POST['id_hotel']."','".$_POST['name_hotel']."','".$_POST['email_hotel']."','".$_POST['phone']."','".$_POST['city']."','".$_POST['country']."')";
 
                          //$result = $connect->query($query);
-                             $query= mysqli_query($con, $sql);
+                             $query= mysqli_query($con,$sql);
                              //eeror in the connection
                              if($query)
-                             echo "insert to databass";
+                             echo "<script>alert('Add Hotel to database');</script>";
+                           else
+                           echo "<script>alert('Can Not Add Hotel');</script>";
                          }
                               ?>
                       </div>

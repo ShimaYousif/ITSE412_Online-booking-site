@@ -47,7 +47,7 @@
                     <h3 class="menu-title">Hotel</h3><!-- /.menu-title -->
                     <li><a href="add-hotel.php"> <i class="menu-icon fa fa-plus-square"></i>Add Hotel</a></li>
                     <li><a href="delete-hotel.php"> <i class="menu-icon ti-trash"></i>Delete Hotel</a></li>
-                    <li class = "active"><a href="show-hotel.php"> <i class="menu-icon fa fa-table"></i>Show Hotel</a></li>
+                    <li><a href="show-hotel.php"> <i class="menu-icon fa fa-table"></i>Show Hotel</a></li>
 
                     <h3 class="menu-title">Room</h3><!-- /.menu-title -->
                     <li><a href="add-room.php"> <i class="menu-icon fa fa-plus-square"></i>Add Room</a></li>
@@ -61,7 +61,7 @@
                             <li><i class="menu-icon fa fa-table"></i><a href="show-user.php">Show User</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reviews.php">Show Reviews</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reservations.php"> Show Reservations</a></li>
-                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show Archives</a></li>
+                            <li  class = "active"><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show Archives</a></li>
 
                         </ul>
                     </li>
@@ -73,18 +73,24 @@
     <!-- Left Panel -->
 
     <!-- Right Panel -->
+ <div id="right-panel" class="right-panel">
 
-    <div id="right-panel" class="right-panel">
+   <!-- Header-->
+    <header id="header" class="header" style="display: inline-block;">
 
-        <!-- Header-->
-        <header id="header" class="header">
+        <div class="header-menu">
 
-            <div class="header-menu">
-                <div class="col-sm-7">
-                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+            <div class="col-sm-7">
+              <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="user-area dropdown float-right">
+                <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
                 </div>
             </div>
-        </header><!-- /header -->
+        </div>
+    </header><!-- /header -->
         <!-- Header-->
 
         <div class="breadcrumbs">
@@ -101,13 +107,12 @@
                         <ol class="breadcrumb text-right">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="#">Hotel</a></li>
-                            <li class="active">Show Hotel</li>
+                            <li class="active">Show Archives</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="content mt-3">
             <div class="animated fadeIn">
                 <div class="row">
@@ -121,7 +126,7 @@
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                          <th>Name Hotel</th>
+                                          <th>Hotel Name</th>
                                           <th>Email</th>
                                           <th>Phone</th>
                                           <th>City</th>
@@ -129,7 +134,6 @@
 
                                         </tr>
                                     </thead>
-
                                    <tbody>
 
                                     <?php
@@ -142,7 +146,7 @@
                                      while ($row = mysqli_fetch_array($records))
                                       {
                                        echo "<tr><td>";
-                                       echo $row['name_hotel'];
+                                       echo $row['hotel_name'];
                                         echo "</td><td>";
                                        echo $row['email'];
                                          echo "</td><td>";
@@ -154,17 +158,14 @@
                                          echo "</td></tr>";
 
                                      }
-
                                       ?>
-
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
-                    </div>
 
-
-                </div>
+                            </div><!-- .card-body -->
+                        </div><!-- .card -->
+                    </div> <!-- .col-md-12 -->
+                </div><!-- .row -->
             </div><!-- .animated -->
         </div><!-- .content -->
 

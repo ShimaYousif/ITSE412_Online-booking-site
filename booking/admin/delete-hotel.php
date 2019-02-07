@@ -84,14 +84,20 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
                   <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                 </div>
-            </div>
 
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
+                </div>
+            </div>
         </header><!-- /header -->
         <!-- Header-->
 
@@ -131,7 +137,7 @@
                                      <input type="text" name="id_hotel" class="form-control px-3 py-3" >
                                    </div>
                                    <div class="form-group">
-                                     <button type="submit" name="submit" id="submit"  class="btn btn-primary py-3 px-5">Delele
+                                     <button type="submit" name="submit" id="submit"  class="btn btn-primary px-4"> Delele
                                      </button>
                                    </div>
                               </form>
@@ -155,7 +161,7 @@
                             }
 
                             //insert hotel removed to Archives table
-                             $sql2 = "insert into  archives (name_hotel,email,telephone,city,country)
+                             $sql2 = "insert into  archives (hotel_name,email,telephone,city,country)
                               VALUES ('$n','$e','$t','$ci','$co')";
                              $query2= mysqli_query($con,$sql2);
 
@@ -167,6 +173,7 @@
                              $sql4 = "DELETE FROM `hotel` WHERE id ='".$_POST['id_hotel']."'";
                              $query4= mysqli_query($con, $sql4);
 
+                               echo "<script>alert('Deleted hotel');</script>";
                            }
                           ?>
 

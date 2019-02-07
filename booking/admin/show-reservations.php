@@ -65,7 +65,7 @@
                             <li class = "active"><i class="menu-icon fa fa-table"></i><a href="show-user.php">Show User</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reviews.php">Show Reviews</a></li>
                             <li class = "active"><i class="menu-icon fa fa-table"></i><a href="show-reservations.php"> Show Reservations</a></li>
-                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show ارشيف</a></li>
+                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show Archives</a></li>
 
                         </ul>
                     </li>
@@ -81,11 +81,18 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
-                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                  <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
                 </div>
             </div>
         </header><!-- /header -->

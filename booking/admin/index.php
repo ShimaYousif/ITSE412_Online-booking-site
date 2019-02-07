@@ -1,4 +1,3 @@
-
 <?php
  include('../connection.php');
  ?>
@@ -33,8 +32,6 @@
 </head>
 
 <body>
-
-
     <!-- Left Panel -->
 
     <aside id="left-panel" class="left-panel">
@@ -71,7 +68,7 @@
                             <li><i class="menu-icon fa fa-table"></i><a href="show-user.php">Show User</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reviews.php">Show Reviews</a></li>
                             <li><i class="menu-icon fa fa-table"></i><a href="show-reservations.php"> Show Reservations</a></li>
-                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show ارشيف</a></li>
+                            <li><i class="menu-icon fa fa-table"></i><a href="show-r.php"> Show Archives</a></li>
 
                         </ul>
                     </li>
@@ -83,29 +80,27 @@
     <!-- Left Panel -->
 
     <!-- Right Panel -->
-
     <div id="right-panel" class="right-panel">
 
-        <!-- Header-->
-        <header id="header" class="header" style="display: inline-block;">
 
-            <div class="header-menu">
+        <div id="right-panel" class="right-panel">
 
-                <div class="col-sm-7">
-                  <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
-                </div>
+            <!-- Header-->
+            <header id="header" class="header" style="display: inline-block;">
 
-                <div class="col-sm-5">
+                <div class="header-menu">
 
+                    <div class="col-sm-7">
+                      <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    </div>
+
+                    <div class="col-sm-5">
                         <div class="user-area dropdown float-right">
-                        /<!--<button type="submit" name="submit" id="submit"  class="btn btn-primary  px-4"><a href="../index.php"> Logout</a>  </button>-->
                         <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
-                      </div>
-            </div>
-          </div>
-
-
-        </header><!-- /header -->
+                        </div>
+                    </div>
+                </div>
+            </header><!-- /header -->
         <!-- Header-->
 
         <div class="breadcrumbs">
@@ -124,8 +119,8 @@
                         </ol>
                     </div>
                 </div>
-            </div>
-          </div> <!-- .content -->
+           </div>
+        </div> <!-- .content -->
 
     <div class="content mt-3">
 
@@ -135,7 +130,7 @@
 
                     <?php
                      if(!mysqli_select_db($con, 'booking')){
-                     }
+
                      //Select count users
                      $sql = "	select count(id_user) from users";
                      $records =  mysqli_query($con,$sql);
@@ -143,6 +138,7 @@
                      {
                        $c = $row['count(id_user)'];
                      }
+                   }
                     ?>
                     <h4 class="mb-0">
                       <span class = "count"> <?php echo "$c"?></span>
@@ -152,14 +148,13 @@
                   </div>
                 </div>
               </div> <!--/.col 1-->
-
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-2" style="height:150px;">
                     <div class="card-body pb-0">
                       <?php
                        //Select sum hotel
                        $sql = "	select count(id) from hotel";
-                       $records =  mysqli_query($con,$sql);
+                       $records = mysqli_query($con,$sql);
 
                        while ($row = mysqli_fetch_array($records))
                        {
@@ -174,8 +169,7 @@
                     </div>
                   </div>
                 </div><!--/.col 2-->
-
-                <div class="col-sm-6 col-lg-3">
+              <div class="col-sm-6 col-lg-3">
                     <div class="card text-white bg-flat-color-3" style="height:150px;">
                         <div class="card-body pb-0">
                           <?php
@@ -195,8 +189,7 @@
                         </div>
                       </div>
                     </div><!--/.col 3-->
-
-                    <div class="col-sm-6 col-lg-3">
+                  <div class="col-sm-6 col-lg-3">
                         <div class="card text-white bg-flat-color-4" style="height:150px;">
                             <div class="card-body pb-0">
                               <?php
@@ -220,14 +213,14 @@
 
 
                         <!-- chart hotels -->
-                      <div class="col-sm-6 col-lg-12" style= "width: 50%; max-width: 50%;">
-                        <div  id ="chartContainer" style="height: 370px; width: 100%;"></div>
-                      </div>
+                  <div class="col-sm-6 col-lg-12" style= "width: 50%; max-width: 50%;">
+                    <div id ="chartContainer" style="height: 370px; width: 100%;"></div>
+                  </div>
 
-                      <!-- chart users -->
-                      <div class="col-sm-6 col-lg-12" style= "width: 50%; max-width: 50%;">
-                        <div  id ="chartContainer2" style="height: 370px; width: 100%;"></div>
-                      </div>
+                  <!-- chart users -->
+                  <div class="col-sm-6 col-lg-12" style= "width: 50%; max-width: 50%;">
+                    <div id ="chartContainer2" style="height: 370px; width: 100%;"></div>
+                  </div>
 
                       <?php
                       //جلب عدد النادق في كل دولة
@@ -257,9 +250,7 @@
                         array("label"=>"Lebanon", "y"=> $t),
                         array("label"=> "Turkey", "y"=> $l)
                       );
-                      ?>
 
-                    <?php
                     //جلب عدد المستخدمين بناءا علي الدول
                     $sql5 = "select count(country) from users where country='Egypt'";
                     $records5 =  mysqli_query($con,$sql5);
@@ -323,8 +314,7 @@
                       title:{
                         text: "Percentage of hotel "
                       },
-
-                    data: [{
+                      data: [{
                       type: "pie",
                       showInLegend: "true",
                       legendText: "{label}",
@@ -337,7 +327,6 @@
                   chart.render();
                   //مخطط يوضح نسبة الفنادق بناءا علي الدول
                   var chart2 = new CanvasJS.Chart("chartContainer2", {
-                    theme: "light2",
                     animationEnabled: true,
                     exportEnabled: true,
 

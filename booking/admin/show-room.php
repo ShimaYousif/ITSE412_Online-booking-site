@@ -75,11 +75,18 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
-                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                  <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
                 </div>
             </div>
         </header><!-- /header -->
@@ -121,10 +128,13 @@
                                         <tr>
                                           <th>ID_Room</th>
                                           <th>ID_Hotel</th>
+                                          <th>Name</th>
                                           <th>Adults</th>
                                           <th>Categories</th>
+                                          <th>Facilities</th>
                                           <th>Bed Type</th>
                                           <th>Price</th>
+                                          <th>Image</th>
                                           <th>Flag</th>
 
                                         </tr>
@@ -146,19 +156,23 @@
                                        echo "</td><td>";
                                        echo $row['id_hotel'];
                                        echo "</td><td>";
+                                       echo $row['Name'];
+                                       echo "</td><td>";
                                        echo $row['adults'];
-                                        echo "</td><td>";
+                                       echo "</td><td>";
                                        echo $row['categorie'];
-                                         echo "</td><td>";
+                                       echo "</td><td>";
+                                       echo $row['facilities'];
+                                       echo "</td><td>";
                                        echo $row['bed_type'];
-                                         echo "</td><td>";
+                                       echo "</td><td>";
                                        echo $row['price'];
-                                         echo "</td><td>";
+                                       echo "</td><td>";
+                                       echo $row['img'];
+                                       echo "</td><td>";
                                        echo $row['flag'];
-                                         echo "</td></tr>";
-
+                                       echo "</td></tr>";
                                      }
-
                                       ?>
 
                                     </tbody>
@@ -166,7 +180,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
             </div><!-- .animated -->

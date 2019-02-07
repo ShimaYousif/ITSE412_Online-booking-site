@@ -45,6 +45,9 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: flex;
 }
+header {
+  display: inline-block;
+}
 // stylelint-enable selector-list-comma-newline-after
 
 // Body

@@ -135,6 +135,12 @@
                                   <lable>ID Hotel</label>
                                   <input type="text" name="id_hotel" class="form-control px-3 py-3" >
                                 </div>
+
+                                <div class="form-group">
+                                  <lable>Name</label>
+                                  <input type="text" name="name" class="form-control px-3 py-3"> </input>
+                                </div>
+
                                 <div class="form-group">
                                   <lable>Adults</label>
                                   <input type="text" name="adults" class="form-control px-3 py-3">
@@ -143,6 +149,12 @@
                                   <lable>Categories</label>
                                   <input type="text" name="categories" class="form-control px-3 py-3" >
                                 </div>
+
+                                <div class="form-group">
+                                  <lable>Facilities</label>
+                                  <input name="facilities" id="facilities" cols="30" rows="7" class="form-control px-3 py-3" ></input>
+                                </div>
+
                                 <div class="form-group">
                                   <lable>Bad Type</label>
                                   <input name="bed_type" id="bad_type" cols="30" rows="7" class="form-control px-3 py-3" ></input>
@@ -153,7 +165,7 @@
                                 </div>
                                 <div class="form-group">
                                   <lable>Image</label>
-                                  <input name="image" id="image" cols="30" rows="7" class="form-control px-3 py-3" ></input>
+                                  <input name="image" id="img" cols="30" rows="7" class="form-control px-3 py-3" ></input>
                                 </div>
                                 <div class="form-group">
                                   <lable>Flag</label>
@@ -170,21 +182,17 @@
                            <?php
                            if (isset($_POST['submit'])) {
                              if($con)
-                               echo "Connect to databass ";
-                         ?>
-                         <br />
-                         <br />
-                         <?php
-                             $sql = "insert into  room (id_room,id_hotel,adults,categorie,bed_type,price,image,flag)
 
-                              VALUES ('".$_POST['id_room']."','".$_POST['id_hotel']."','".$_POST['adults']."','".$_POST['categories']."','".$_POST['bed_type']."','".$_POST['price']."','".$_POST['image']."','".$_POST['flag']."')";
+                             $sql = "insert into  room (id_room,id_hotel,Name,adults,categorie,facilities,bed_type,price,img,flag)
+
+                              VALUES ('".$_POST['id_room']."','".$_POST['id_hotel']."','".$_POST['name']."','".$_POST['adults']."','".$_POST['categories']."',
+                              '".$_POST['facilities']."','".$_POST['bed_type']."','".$_POST['price']."','".$_POST['image']."','".$_POST['flag']."')";
 
                          //$result = $connect->query($query);
                              $query= mysqli_query($con, $sql);
                              //eeror in the connection
                              if($query)
-                             echo "insert to databass";
-                         }
+                             echo "<script>alert(' Add Room to database');</script>";                         }
                               ?>
                       </div>
                     </div>

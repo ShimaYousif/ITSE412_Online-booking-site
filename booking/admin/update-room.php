@@ -83,14 +83,20 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
                   <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                 </div>
-            </div>
 
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
+                </div>
+            </div>
         </header><!-- /header -->
         <!-- Header-->
 
@@ -143,10 +149,10 @@
                         <form  method="post">
                           <?php
                           if (isset($_POST['submit'])) {
-                            //if($con)
-                            //  echo "Connect to databass ";
+                            if($con)
+                              echo "Connect to databass ";
 
-                            $sql ="select adults,Name,categorie,bed_type,price,facilities,img from room where id_room='".$_POST['id_room']."'";
+                            $sql ="select adults,categorie,bed_type,price from room where id_room='".$_POST['id_room']."'";
 
                         //$result = $connect->query($query);
                             $query= mysqli_query($con, $sql);
@@ -154,37 +160,29 @@
 
                             while ($row = mysqli_fetch_array($query))
                              {
-                             ?>
+                             // $sh = $row['id_hotel'];
+                             // $e = $row['adults'];
+                             // $t = $row['categorie'];
+                             // $co = $row['bed_type'];
+                             // $pr = $row['price'];
 
-                             <form  method="post">
+                            $date = ' <form  method="post">
 
-                                <div class="form-group">
-                                  <lable>Name</label>
-                                  <input type="text" name="Name" value="<?php echo $row['Name']; ?>"  class="form-control px-3 py-3"> </input>
-                                </div>
                                 <div class="form-group">
                                   <lable>Adults</label>
-                                  <input type="text" name="adults" value="<?php echo $row['adults']; ?>"  class="form-control px-3 py-3"> </input>
+                                  <input type="text" name="adults" value= '. $row['adults'].'  class="form-control px-3 py-3">
                                 </div>
                                 <div class="form-group">
                                   <lable>Categories</label>
-                                  <input type="text" name="categories" value="<?php echo $row['categorie']; ?>"  class="form-control px-3 py-3" > </input>
+                                  <input type="text" name="categories" value= '. $row['categorie'].'  class="form-control px-3 py-3" >
                                 </div>
                                 <div class="form-group">
                                   <lable>Bad Type</label>
-                                  <input name="bed_type" id="bad_type" cols="30" rows="7" value="<?php echo $row['bed_type']; ?>" class="form-control px-3 py-3" >  </input>
+                                  <input name="bed_type" id="bad_type" cols="30" rows="7" value=' . $row['bed_type']. ' class="form-control px-3 py-3" ></input>
                                 </div>
                                 <div class="form-group">
                                   <lable>Price</label>
-                                  <input name="price" id="price" cols="30" rows="7" value="<?php echo $row['price']; ?> "  class="form-control px-3 py-3" >  </input>
-                                </div>
-                                <div class="form-group">
-                                  <lable>Facilities</label>
-                                  <input name="facilities" id="facilities" cols="30" rows="7" value="<?php echo $row['facilities']; ?>" class="form-control px-3 py-3" ></input>
-                                </div>
-                                <div class="form-group">
-                                  <lable>Image</label>
-                                  <input name="img" id="img" cols="30" rows="7" value="<?php echo $row['img']; ?>" class="form-control px-3 py-3" >  </input>
+                                  <input name="price" id="price" cols="30" rows="7" value=' . $row['price'] . ' class="form-control px-3 py-3" ></input>
                                 </div>
 
                                 <div class="form-group">
@@ -192,11 +190,10 @@
                                 </button>
                                 </div>
                               </form>
-                              </div>
-                              <?php
-                                }
-                              }
-                              ?>
+                              </div>';
+                         }
+                         echo $date;
+                       }  ?>
 
   <!--<div class="form-group">
         <lable>ID Hotel</label>

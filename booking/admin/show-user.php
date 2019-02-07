@@ -76,11 +76,18 @@
     <div id="right-panel" class="right-panel">
 
         <!-- Header-->
-        <header id="header" class="header">
+        <header id="header" class="header" style="display: inline-block;">
 
             <div class="header-menu">
+
                 <div class="col-sm-7">
-                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                  <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                    <a href="../index.php"><button type="submit"  class="btn btn-primary px-4">Logout</button></a>
+                    </div>
                 </div>
             </div>
         </header><!-- /header -->
@@ -122,8 +129,6 @@
                                         <tr>
                                           <th>ID_User</th>
                                           <th>Name</th>
-                                          <th>Password</th>
-                                          <th>Type</th>
                                           <th>Phone</th>
                                           <th>Email</th>
                                           <th>Country</th>
@@ -147,16 +152,12 @@
                                        echo "</td><td>";
                                        echo $row['user_name'];
                                        echo "</td><td>";
-                                       echo $row['password'];
-                                        echo "</td><td>";
-                                       echo $row['type'];
-                                         echo "</td><td>";
                                        echo $row['telephone'];
-                                         echo "</td><td>";
+                                       echo "</td><td>";
                                        echo $row['email'];
-                                         echo "</td><td>";
+                                       echo "</td><td>";
                                        echo $row['country'];
-                                         echo "</td></tr>";
+                                       echo "</td></tr>";
 
                                      }
 

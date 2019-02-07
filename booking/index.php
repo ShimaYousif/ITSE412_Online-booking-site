@@ -213,25 +213,22 @@
                         </select>
                       </div>
                     </div>
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <label for="checkin">Children</label>
-                      <div class="field-icon-wrap">
-                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
-                        </select>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-3 align-self-end">
-                  <button class="btn btn-primary btn-block">Search</button>
+                  <button name="submit2" type="submit" class="btn btn-primary btn-block">Search</button>
                 </div>
               </div>
             </form>
+            <?php
+             if (isset($_POST['submit2'])){
+               echo "<form action= search.php  method = post>";
+               echo "</form>";
+             }
+
+             ?>
+
           </div>
         </div>
       </div>

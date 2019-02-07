@@ -1,7 +1,6 @@
 <?php
  include('connection.php');
  ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,17 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
+     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -34,41 +32,33 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#"  id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
+          <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="egypt.php">Egypt</a>
+              <a class="dropdown-item" href="Egypt.php">Egypt</a>
               <a class="dropdown-item" href="Lebanon.php">Lebanon</a>
-              <a class="dropdown-item active" href="Turkey.php">Turkey</a>
+              <a class="dropdown-item" href="Turkey.php">Turkey</a>
             </div>
 
           </li>
           <li class="nav-item"><a href="about.php" class="nav-link">About Us</a></li>
           <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+          <li class "nav-item"><a class="nav-link" data-toggle="modal" data-target="#LoginModal" style="padding-top: 30px;"><button type="submit" class="btn btn-primary ">Login</button></a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- END nav -->
-  <div class="block-30 block-30-sm item" style="background-image: url('images/TR_2.jpg');" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-10">
-          <span class="subheading-sm">Countries</span>
-              <h2 class="heading">Turkey</h2>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <div class="site-section bg-light">
         <div class="container">
           <div class="row mb-5">
 
+
+
             <?php
-              $sqlget = "SELECT * FROM room WHERE id_hotel=100;" ;
+              $sqlget = "SELECT * FROM room WHERE flag=0;" ;
               $sqldata = $con -> query($sqlget) ;
               if($sqldata -> num_rows> 0 ){
                 while($row = $sqldata -> fetch_assoc()) {
@@ -92,7 +82,7 @@
                   <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?> </li>
                   <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?> </li>
                 </ul>
-                <p><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></p>
+                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
 
               </div>
             </div>
@@ -101,84 +91,14 @@
             }
           }
           ?>
-
-
-
-
-          <div class="bg-light site-section">
-    	<div class="container">
-
-    		<div class="row mb-5">
-            <div class="col-md-7 section-heading">
-              <h2 class="heading">Hotel Services</h2>
+              </div>
             </div>
           </div>
 
-    		<div class="row ">
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-double-bed"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Luxury Rooms</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-wifi"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Fast &amp; Free Wifi</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-customer-service"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Call Us 24/7</h3>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-taxi"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Travel Accomodation</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-credit-card"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Accepts Credit Card</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="media block-6">
-          <div class="icon"><span class="flaticon-dinner"></span></div>
-          <div class="media-body">
-            <h3 class="heading">Restaurant</h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    	</div>
-    </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -241,7 +161,7 @@
                 <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St,Tripoli, Ly</span></li>
                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+218 91/92 3929 210</span></a></li>
                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@booking.com</span></a></li>
-                <li><span class="icon icon-clock-o"></span><span class="text">Starday &mdash; Friday 8:00am -11:00pm</span></li>
+                <li><span class="icon icon-clock-o"></span><span class="text">Starday &mdash; Friday 8:00am - 11:00pm</span></li>
               </ul>
             </div>
         </div>
@@ -253,7 +173,7 @@
           <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made by Malak & Shima
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
       </div>
@@ -264,10 +184,10 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script><!--yes-->
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script><!--yes-->
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>

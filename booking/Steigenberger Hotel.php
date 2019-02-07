@@ -1,3 +1,7 @@
+<?php
+ include('connection.php');
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,173 +67,41 @@
 
 
 
+            <?php
+              $sqlget = "SELECT * FROM room WHERE id_hotel=300;" ;
+              $sqldata = $con -> query($sqlget) ;
+              if($sqldata -> num_rows> 0 ){
+                while($row = $sqldata -> fetch_assoc()) {
+
+              ?>
+
+
+
             <div class="col-lg-4 mb-5">
             <div class="block-34">
+
               <div class="image">
-                <a href="#"><img src="images/st3_img.jpg" alt="Image placeholder"></a>
+                <a href="#"><img src="<?php echo $row['img']; ?> "></a>
               </div>
               <div class="text">
-                <h2 class="heading"> Suite</h2>
-                <div class="price"><sup>$</sup><span class="number">445</span><sub>/per night</sub></div>
+                <h2 class="heading"> <?php echo $row['Name']; ?> </h2>
+                <div class="price"><sup>$</sup><span class="number"><?php echo $row['price']; ?></span><sub>/per night</sub></div>
                 <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Suite</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 double bed</li>
+                  <li><strong>Adults:</strong> <?php echo $row['adults']; ?></li>
+                  <li><strong>Categories:</strong> <?php echo $row['categorie']; ?> </li>
+                  <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?> </li>
+                  <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?> </li>
                 </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+                <p><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></p>
+
               </div>
             </div>
           </div>
+          <?php
+            }
+          }
 
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st2_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading"> Superior City View Room</h2>
-                <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 3</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st1_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading">Junior Suite </h2>
-                <div class="price"><sup>$</sup><span class="number">320</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 2 single beds </li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st4_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading">Deluxe Room </h2>
-                <div class="price"><sup>$</sup><span class="number">290</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st5_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading"> Twin Guest Room</h2>
-                <div class="price"><sup>$</sup><span class="number">170</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong>2 Single bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st6_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading">Family Room</h2>
-                <div class="price"><sup>$</sup><span class="number">275</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 Double bed and 1 single bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st7_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading">Superior Queen Pool View Room </h2>
-                <div class="price"><sup>$</sup><span class="number">350</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 3</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st8_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading">Deluxe Club Room with Kitchenette</h2>
-                <div class="price"><sup>$</sup><span class="number">370</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2 </li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 Double bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-5">
-            <div class="block-34">
-              <div class="image">
-                <a href="#"><img src="images/st9_img.jpg" alt="Image placeholder"></a>
-              </div>
-              <div class="text">
-                <h2 class="heading"> Deluxe Side Nile View Room</h2>
-                <div class="price"><sup>$</sup><span class="number">375</span><sub>/per night</sub></div>
-                <ul class="specs">
-                  <li><strong>Adults:</strong> 2</li>
-                  <li><strong>Categories:</strong> Single</li>
-                  <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                  <li><strong>Bed Type:</strong> 1 Double bed</li>
-                </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+          ?>
               </div>
             </div>
           </div>
@@ -405,3 +277,6 @@
 
     </body>
   </html>
+  <?php
+  include('colseConnaction.php');
+   ?>

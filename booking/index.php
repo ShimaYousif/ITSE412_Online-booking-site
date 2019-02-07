@@ -62,8 +62,8 @@
      </div>
 
      <div class="modal-body">
-       <lable>UserName</label>
-       <input type="text" name="username" id="username" class="form-control" />
+       <lable>Name</label>
+       <input type="text" name="adminname" id="adminname" class="form-control" />
        <br />
        <lable>Password</label>
        <input type="password" name="password" id="password" class="form-control"/>
@@ -90,7 +90,7 @@
     <script>
     $(document).ready(function(){
       $('#login_button').click(function(){
-        var username = $('#username').val();
+        var username = $('#adminname').val();
         var password = $('#password').val();
         if(username != '' && password != '')
         {

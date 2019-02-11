@@ -63,7 +63,7 @@
 
      <div class="modal-body">
        <lable>Name</label>
-       <input type="text" name="adminname" id="adminname" class="form-control" />
+       <input type="text" name="adminname" id="username" class="form-control" />
        <br />
        <lable>Password</label>
        <input type="password" name="password" id="password" class="form-control"/>
@@ -90,12 +90,12 @@
     <script>
     $(document).ready(function(){
       $('#login_button').click(function(){
-        var username = $('#adminname').val();
+        var username = $('#username').val();
         var password = $('#password').val();
         if(username != '' && password != '')
         {
             $.ajax ({
-              url:"serve.php",
+              url:"../index.php",
               method:"post",
               data:{username:username, password:password},
               success:function(data){
@@ -164,25 +164,18 @@
         <div class="col-md-12">
 
           <div class="block-32">
-            <form action="#">
+            <form action="search.php" method="post" >
               <div class="row">
 
-          <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-             <div class="row">
-               <div class=".col-md-n mb-3 mb-md-0">
-                 <label for="checkin">Country</label>
-                 <div class="field-icon-wrap">
-                   <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                   <select name="" id="" class="form-control">
-                      <option value=""></option>
-                     <option value="">Turkey</option>
-                     <option value="">Lebanon</option>
-                     <option value="">Egypt</option>
-                   </select>
-                 </div>
-               </div>
-             </div>
-           </div>
+                    <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                       <div class="row">
+                         <div class=".col-md-n mb-3 mb-md-0">
+                           <label for="checkin">Country</label>
+                           <input type="text" name="Country" class="form-control">
+
+                         </div>
+                       </div>
+                     </div>
 
 
                 <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
@@ -203,15 +196,8 @@
                   <div class="row">
                     <div class="col-md-6 mb-3 mb-md-0">
                       <label for="checkin">Adults</label>
-                      <div class="field-icon-wrap">
-                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                        <select name="" id="" class="form-control">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4+</option>
-                        </select>
-                      </div>
+                      <input type="text" class="form-control" name="adults">
+
                     </div>
 
                   </div>
@@ -221,13 +207,14 @@
                 </div>
               </div>
             </form>
-            <?php
-             if (isset($_POST['submit2'])){
-               echo "<form action= search.php  method = post>";
-               echo "</form>";
-             }
 
-             ?>
+
+               </div>
+             </div>
+           </div>
+
+
+
 
           </div>
         </div>
@@ -235,139 +222,7 @@
 
 
 
-    <div class="site-section block-13 bg-light">
-      <div class="container">
-         <div class="row mb-5">
-            <div class="col-md-7 section-heading">
-              <span class="subheading-sm">Featured Rooms</span>
-              <h2 class="heading">Rooms &amp; Suites</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, iusto, omnis! Quidem, sint, impedit? Dicta eaque delectus tempora hic, corporis velit doloremque quod quam laborum, nobis iusto autem culpa quaerat!</p>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-md-12">
-              <div class="nonloop-block-13 owl-carousel">
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Bachelor Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">156</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_2.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Family Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">320</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_3.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Presidential Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">425</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_4.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Double Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">525</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_5.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">VIP Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">600</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_6.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">VIP Room</h2>
-                        <div class="price"><sup>$</sup><span class="number">760</span><sub>/per night</sub></div>
-                        <ul class="specs">
-                          <li><strong>Adults:</strong> 1</li>
-                          <li><strong>Categories:</strong> Single</li>
-                          <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                          <li><strong>Size:</strong> 20m<sup>2</sup></li>
-                          <li><strong>Bed Type:</strong> One bed</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-
-            </div> <!-- .col-md-12 -->
-          </div>
-      </div>
-    </div>
 
     <div class="site-section bg-light">
       <div class="container">
@@ -397,81 +252,37 @@
                 <div class="row">
                   <div class="col-md-12 block-13">
                     <div class="nonloop-block-13 owl-carousel">
+                      <?php
+                        $sqlget = "SELECT * FROM room WHERE id_hotel=100 limit 4;" ;
+                        $sqldata = $con -> query($sqlget) ;
+                        if($sqldata -> num_rows> 0 ){
+                          while($row = $sqldata -> fetch_assoc()) {
+
+                        ?>
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="Renata Hotel.php"><img src="images/renata4_img.jpg" alt="Image placeholder"></a>
+                            <a href="Renata Hotel.php"><img src="<?php echo $row['img']; ?> "></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Deluxe Room with Terrace</h2>
-                            <div class="price"><sup>$</sup><span class="number">250</span><sub>/per night</sub></div>
+                            <h2 class="heading"><?php echo $row['Name']; ?></h2>
+                            <strong hidden>Room Number</strong><input hidden name="room-id" value="<?php echo $row['id_room']; ?>"/>
+                            <div class="price"><sup>$</sup><span class="number"><?php echo $row['price']; ?></span><sub>/per night</sub></div>
                             <ul class="specs">
-                              <li><strong>Adults:</strong> 3</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
+                              <li><strong>Adults:</strong> <?php echo $row['adults']; ?></li>
+                              <li><strong>Categories:</strong> <?php echo $row['categorie']; ?></li>
+                              <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?></li>
+                              <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?></li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+                            <p><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></p>
                           </div>
                         </div>
                       </div>
 
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Renata Hotel.php"><img src="images/img_2.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Single Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">145</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 1</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> One bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Renata Hotel.php"><img src="images/renata5_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Family Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">375</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 Double bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Renata Hotel.php"><img src="images/renata3_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Comfort Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">200</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 3</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 2 single beds and  1 sofa bed or 1 double bed and  1 sofa bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
+                      <?php
+                        }
+                      }
+                      ?>
 
                     </div>
                   </div>
@@ -483,81 +294,37 @@
                 <div class="row">
                   <div class="col-md-12 block-13">
                     <div class="nonloop-block-13 owl-carousel">
+                      <?php
+                        $sqlget = "SELECT * FROM room WHERE id_hotel=200 limit 4;" ;
+                        $sqldata = $con -> query($sqlget) ;
+                        if($sqldata -> num_rows> 0 ){
+                          while($row = $sqldata -> fetch_assoc()) {
+
+                        ?>
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="Hilton Hotel.php"><img src="images/hi3_img.jpg" alt="Image placeholder"></a>
+                            <a href="Hilton Hotel.php"><img src="<?php echo $row['img']; ?> "></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Deluxe Club Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">345</span><sub>/per night</sub></div>
+                            <h2 class="heading"><?php echo $row['Name']; ?></h2>
+                            <strong hidden>Room Number</strong><input hidden name="room-id" value="<?php echo $row['id_room']; ?>"/>
+                            <div class="price"><sup>$</sup><span class="number"><?php echo $row['price']; ?></span><sub>/per night</sub></div>
                             <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 double bed</li>
+                              <li><strong>Adults:</strong> <?php echo $row['adults']; ?></li>
+                              <li><strong>Categories:</strong> <?php echo $row['categorie']; ?></li>
+                              <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?></li>
+                              <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?></li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+                            <p><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></p>
                           </div>
                         </div>
                       </div>
 
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Hilton Hotel.php"><img src="images/hi2_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading"> Superior Double Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 3</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Hilton Hotel.php"><img src="images/hi1_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Deluxe Twin Room </h2>
-                            <div class="price"><sup>$</sup><span class="number">280</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 2 single beds </li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Hilton Hotel.php"><img src="images/hi4_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Deluxe Room </h2>
-                            <div class="price"><sup>$</sup><span class="number">190</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
+                      <?php
+                        }
+                      }
+                      ?>
 
 
                     </div>
@@ -569,81 +336,37 @@
                   <div class="col-md-12 block-13">
                     <div class="nonloop-block-13 owl-carousel">
 
+                      <?php
+                        $sqlget = "SELECT * FROM room WHERE id_hotel=300 limit 4;" ;
+                        $sqldata = $con -> query($sqlget) ;
+                        if($sqldata -> num_rows> 0 ){
+                          while($row = $sqldata -> fetch_assoc()) {
+
+                        ?>
                       <div class="item">
                         <div class="block-34">
                           <div class="image">
-                            <a href="Steigenberger Hotel.php"><img src="images/st4_img.jpg" alt="Image placeholder"></a>
+                            <a href="Steigenberger Hotel.php"><img src="<?php echo $row['img']; ?> "></a>
                           </div>
                           <div class="text">
-                            <h2 class="heading">Deluxe Room </h2>
-                            <div class="price"><sup>$</sup><span class="number">290</span><sub>/per night</sub></div>
+                            <h2 class="heading"><?php echo $row['Name']; ?></h2>
+                            <strong hidden>Room Number</strong><input hidden name="room-id" value="<?php echo $row['id_room']; ?>"/>
+                            <div class="price"><sup>$</sup><span class="number"><?php echo $row['price']; ?></span><sub>/per night</sub></div>
                             <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 sofa bed and  1 double bed</li>
+                              <li><strong>Adults:</strong> <?php echo $row['adults']; ?></li>
+                              <li><strong>Categories:</strong> <?php echo $row['categorie']; ?></li>
+                              <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?></li>
+                              <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?></li>
                             </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+                            <p><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></p>
                           </div>
                         </div>
                       </div>
 
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Steigenberger Hotel.php"><img src="images/st2_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading"> Superior City View Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">300</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 3</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 1 double bed and 1 sofa bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Steigenberger Hotel.php"><img src="images/st5_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading"> Twin Guest Room</h2>
-                            <div class="price"><sup>$</sup><span class="number">170</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong>2 Single bed</li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="item">
-                        <div class="block-34">
-                          <div class="image">
-                            <a href="Steigenberger Hotel.php"><img src="images/st1_img.jpg" alt="Image placeholder"></a>
-                          </div>
-                          <div class="text">
-                            <h2 class="heading">Junior Suite </h2>
-                            <div class="price"><sup>$</sup><span class="number">320</span><sub>/per night</sub></div>
-                            <ul class="specs">
-                              <li><strong>Adults:</strong> 2</li>
-                              <li><strong>Categories:</strong> Single</li>
-                              <li><strong>Facilities:</strong> Closet with hangers, HD flat-screen TV, Telephone</li>
-                              <li><strong>Bed Type:</strong> 2 single beds </li>
-                            </ul>
-                            <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
-                          </div>
-                        </div>
-                      </div>
+                      <?php
+                        }
+                      }
+                      ?>
 
                     </div>
                   </div>
@@ -657,248 +380,6 @@
             </div>
 
 
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-              <div class="row">
-                <div class="col-md-12 block-13">
-                  <div class="nonloop-block-13 owl-carousel">
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_2.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">23.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_1.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">30.50</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">45.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_4.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">33.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_1.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">30.50</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_2.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">23.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">45.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_4.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">33.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-              <div class="row">
-                <div class="col-md-12 block-13">
-                  <div class="nonloop-block-13 owl-carousel">
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">45.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_1.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">30.50</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_2.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">23.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_4.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">33.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_1.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Asparagus</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">30.50</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_2.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Grilled Top Sirloin Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">23.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_3.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Egg &amp; Grilled Steak</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">45.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="block-34">
-                        <div class="image">
-                          <a href="#"><img src="images/menu_4.jpg" alt="Image placeholder"></a>
-                        </div>
-                        <div class="text">
-                          <h2 class="heading">Spicy Noodles</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quo vel aut ab qui quas!</p>
-                          <div class="price"><sup>$</sup><span class="number">33.45</span></div>
-                        </div>
-                      </div>
-                    </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="block-30 block-30-sm item" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-12">
-              <h2 class="heading">Quality accommodation that exceeds the expectations</h2>
-              <p><a href="#" class="btn py-4 px-5 btn-primary">Learn More</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <div class="site-section bg-light">
       <div class="container">

@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
      <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
   </head>
   <body>
 
@@ -50,22 +56,57 @@
     </div>
   </nav>
 
+  <div class="block-31" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 item" style="background-image: url('images/TR_2.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome To</span>
+              <h2 class="heading">Turkey</h2>
+              <p><a href="Turkey.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('images/LE_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome To</span>
+              <h2 class="heading">Lebanon</h2>
+              <p><a href="Lebanon.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('images/EG_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome To</span>
+              <h2 class="heading">Egypt</h2>
+              <p><a href="egypt.php" class="btn py-4 px-5 btn-primary">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="site-section bg-light">
         <div class="container">
           <div class="row mb-5">
 
+           <?php
 
+            $sql1 = "SELECT img,room.Name,price,adults,categorie,facilities,bed_type,id_room FROM room, hotel WHERE flag= 0 and adults= '".$_POST['adults']."' and country= '".$_POST['Country']."' and room.id_hotel=hotel.id " ;
+            $sqldata = $con -> query($sql1) ;
+            if($sqldata -> num_rows > 0 ){
+              while($row = $sqldata -> fetch_assoc()) {
 
-            <?php
-              $sqlget = "SELECT * FROM room WHERE flag=0;" ;
-              $sqldata = $con -> query($sqlget) ;
-              if($sqldata -> num_rows> 0 ){
-                while($row = $sqldata -> fetch_assoc()) {
-
-              ?>
-
-
+            ?>
 
             <div class="col-lg-4 mb-5">
             <div class="block-34">
@@ -74,7 +115,8 @@
                 <a href="#"><img src="<?php echo $row['img']; ?> "></a>
               </div>
               <div class="text">
-                <h2 class="heading"> <?php echo $row['Name']; ?> </h2>
+                <h2  class="heading"> <?php echo $row['Name']; ?> </h2>
+                <strong hidden>Room Number</strong><input hidden name="room-id" value="<?php echo $row['id_room']; ?>"/>
                 <div class="price"><sup>$</sup><span class="number"><?php echo $row['price']; ?></span><sub>/per night</sub></div>
                 <ul class="specs">
                   <li><strong>Adults:</strong> <?php echo $row['adults']; ?></li>
@@ -82,7 +124,7 @@
                   <li><strong>Facilities:</strong> <?php echo $row['facilities']; ?> </li>
                   <li><strong>Bed Type:</strong> <?php echo $row['bed_type']; ?> </li>
                 </ul>
-                <p><a href="#" class="btn btn-primary px-4">Booke Now</a></p>
+                  <p><a  data-toggle="modal" data-target="#Booke_Modal"><button name="submit" type="submit" class="btn btn-primary px-4">Booke Now</button></a></p>
 
               </div>
             </div>
@@ -90,17 +132,76 @@
           <?php
             }
           }
+
           ?>
-              </div>
-            </div>
+          <div id="Booke_Modal" class="modal fade" role="dialog">
+            <form method="post">
+             <div class="modal-dialog">
+               <div class="modal-content">
+
+               <?php
+               if (isset($_POST['submit'])) {
+
+                ?>
+
+                 <div class="modal-body">
+                   <lable>Room Name</label>
+                   <input type="text" name="name" id="name" class="form-control" value="<?php echo $row['Name']; ?>" />
+                   <lable>User Name</label>
+                   <input type="text" name="username" id="username" class="form-control" />
+                   <lable>E-mail</label>
+                   <input type="text" name="email" id="email" class="form-control" />
+                   <br />
+                   <lable>Telephone</label>
+                   <input type="text" name="tele" id="tele" class="form-control"/>
+                   <lable>Country</label>
+                   <input type="text" name="country" id="country" class="form-control"/>
+
+                   <lable>Check-in</label>
+                   <input type="date" name="check-in" id="check-in" class="form-control"/>
+                   <lable>Check-out</label>
+                   <input type="date" name="check-out" id="check-out" class="form-control"/>
+                   <br />
+                </div>
+
+
+          <div class="modal-footer">
+            <button type="submit" name="booke_button" id="booke_button" class=" btn btn-primary submit">Next</button>
           </div>
 
 
-        </div>
-      </div>
-    </div>
+     <?php
+   }
+
+   if (isset($_POST['submit'])) {
+     $sql2 = "insert into  users (user_name,telephone,	email,	country)
+      VALUES ('".$_POST['username']."','".$_POST['tele']."','".$_POST['email']."','".$_POST['country']."')";
+     $query2= mysqli_query($con,$sql2);
+
+     $sql3 = "select id_user where 	email='".$_POST['email']."' and telephone='".$_POST['tele']."' ";
+     $query3= mysqli_query($con,$sql3);
+     while ($row = mysqli_fetch_array($query1))
+      {
+      $n = $row['id_user'];
+    }
 
 
+     $sql4 = "insert into  hotel_booking (id_user , id_room,	check_in,	check_out)
+      VALUES ('$n','".$_POST['room-id']."','".$_POST['check-in']."','".$_POST['check-out']."')";
+     $query4= mysqli_query($con,$sql4);
+
+     echo "<script>alert('successful Booking');</script>";
+
+   }
+
+ ?>
+</div>
+</div>
+
+</div>
+              </div>
+            </div>
+          </div>
 
   <footer class="footer">
     <div class="container">
